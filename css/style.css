@@ -1,0 +1,325 @@
+@import './project.css';
+@import './contact.css';
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.list{
+    position: absolute;
+    right: 60px;
+    top: 49px;
+    display: flex;
+    justify-content: space-between;
+
+    width: 270px;
+}
+.list li{
+    list-style: none;
+}
+
+ .list li a{
+    color: #A6A2A2;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s ease-in;
+}
+ .list li a:hover{
+    color: white;
+}
+
+ .logo{
+    position: absolute;
+    left: 60px;
+    top: 30px;
+    height: 60px;
+    width: 55px;
+}
+.logo img{
+  height: 100%;
+  width: 100%;
+}
+
+.main .home {
+height: 100vh;
+width: 100%;
+
+background: radial-gradient(47.23% 84.17% at 41.17% 15.83%, rgba(255, 255, 255, 0.11) 0%, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.08) 12.43%, rgba(255, 255, 255, 0.07) 19.95%, rgba(255, 255, 255, 0.05) 34.22%, rgba(255, 255, 255, 0.01) 65.75%, rgba(255, 255, 255, 0) 96.75%, rgba(255, 255, 255, 0) 100%), #1C1E22;
+
+
+/* grid */
+display: grid;
+align-items: center;
+justify-items: center;
+}
+
+.main .home .content{
+    height: 350px;
+    width: 450px;
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    position: relative;
+}
+
+.main .home .content h3{
+    color: white;
+    font-size: 130px;
+    font-family: 'Archivo Black', sans-serif;
+
+}
+
+.main .home .content h3::selection{
+    background: black;
+    color: white;
+}
+.main .home .content .wrapper{
+    position: absolute;
+    top: 65px;
+    left: 120px;
+}
+.main .home .content .wrapper p{
+    color: #A6A2A2;
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+}
+.main .home .content .wrapper p::selection{
+    background: black;
+    color: #A6A2A2;
+}
+
+.main .home .content .work p{
+    color: #A6A2A2;
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+}
+.main .home .content .work p::selection{
+    background: black;
+    color: #A6A2A2;
+}
+
+.main .home .content .work{
+    position: absolute;
+    bottom: 30px;
+    left: 230px;
+    height: 65px;
+ 
+    
+    /* flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.main .home .social {
+
+    height: 100px;
+    width: 50px;
+    /* flex */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+    bottom: 50px;
+    left: 60px;
+}
+
+.main .home .social i{
+    color: #A6A2A2;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.main .home .social i:hover{
+    color: white;
+   
+}
+
+.main .home .scroll-png {
+    height: 120px;
+    width: 40px;
+    position: absolute;
+    right: 60px;
+    bottom: 45px;
+}
+.main .home .scroll-png img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+@media (max-width: 1015px) and (min-width: 845px) {
+    .main .home .hii{
+        width: 550px;
+        height: unset;
+    }
+
+}
+
+@media (max-width: 844px) and (min-width: 700px) {
+    .main .home .hii{
+        width: 550px;
+        height: unset;
+    }
+
+}
+
+@media (max-width: 700px) and (min-width: 505px) {
+    .main .home .hii{
+        width: 450px;
+height: unset;
+    }
+
+
+
+    .list {
+        position: absolute;
+        right: 20px;
+    }
+
+    .logo{
+        position: absolute;
+        left: 20px;
+        top: 30px;
+        height: 60px;
+        width: 55px;
+    }
+    .main .home .social { 
+        position: absolute;
+        bottom: 50px;
+        left: 18px;
+    }
+
+    .main .home .scroll-png {
+        position: absolute;
+        right: 18px;
+        bottom: 30px;
+    }
+
+    .web {
+        position: fixed;
+        width: 100%;
+        bottom: 140px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    
+    }
+    .web h3{
+        font-size: 40px;
+        color: white;
+        font-family: 'Archivo Black', sans-serif;
+        background-color: <blurry>; 
+    }
+}
+
+@media (max-width: 505px) and (min-width: 410px) {
+    .main .home .content{
+        width: 400px;
+    }
+    .main .home .content h3{
+        font-size: 80px;
+    }
+
+
+    .list {
+        position: absolute;
+        right: 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 220px;
+    }
+
+    .logo{
+        position: absolute;
+        left: 20px;
+        top: 30px;
+        height: 60px;
+        width: 55px;
+    }
+    .main .home .social { 
+        position: absolute;
+        bottom: 40px;
+        left: 18px;
+    }
+
+    .main .home .scroll-png {
+        position: absolute;
+        right: 18px;
+        bottom: 30px;
+    }
+   
+
+}
+
+@media (max-width: 410px) {
+
+    .main .home .content .wrapper{
+        position: absolute;
+        top: 75px;
+        left: 85px;
+    }
+    .main .home .content .work{
+        position: absolute;
+        bottom: 30px;
+        left: 140px;
+        height: 65px;
+     
+        
+        /* flex */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    
+    }
+    .main .home .content{
+        width: 300px;
+    }
+    .main .home .content h3{
+        font-size: 80px;
+    }
+
+
+    .list {
+        position: absolute;
+        right: 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 220px;
+    }
+
+    .logo{
+        position: absolute;
+        left: 20px;
+        top: 30px;
+        height: 60px;
+        width: 55px;
+    }
+    .main .home .social { 
+        position: absolute;
+        bottom: 40px;
+        left: 18px;
+    }
+
+    .main .home .scroll-png {
+        position: absolute;
+        right: 18px;
+        bottom: 30px;
+    }
+}

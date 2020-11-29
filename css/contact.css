@@ -1,0 +1,444 @@
+@import './project.css';
+@import './contact.css';
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+.list{
+    position: absolute;
+    right: 60px;
+    top:49px;
+    display: flex;
+    justify-content: space-between;
+
+    width: 270px;
+}
+.list li{
+    list-style: none;
+}
+
+ .list li a{
+    color: #A6A2A2;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s ease-in;
+}
+ .list li a:hover{
+    color: white;
+}
+
+ .logo{
+    position: absolute;
+    left: 60px;
+    top: 30px;
+    height: 60px;
+    width: 55px;
+}
+.logo img{
+  height: 100%;
+  width: 100%;
+}
+
+
+.main .home {
+height: 100vh;
+width: 100%;
+
+background: radial-gradient(47.23% 84.17% at 41.17% 15.83%, rgba(255, 255, 255, 0.11) 0%, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.08) 12.43%, rgba(255, 255, 255, 0.07) 19.95%, rgba(255, 255, 255, 0.05) 34.22%, rgba(255, 255, 255, 0.01) 65.75%, rgba(255, 255, 255, 0) 96.75%, rgba(255, 255, 255, 0) 100%), #1C1E22;
+
+
+/* grid */
+display: grid;
+align-items: center;
+justify-items: center;
+}
+
+
+.main .home .content .wrapper{
+    position: absolute;
+    top: 65px;
+    left: 120px;
+}
+.main .home .content .wrapper p{
+    color: #A6A2A2;
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+}
+
+.main .home .content .work p{
+    color: #A6A2A2;
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+}
+
+.main .home .content .work{
+    position: absolute;
+    bottom: 30px;
+    left: 230px;
+    height: 65px;
+ 
+    
+    /* flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.main .home .social {
+
+    height: 100px;
+    width: 50px;
+    /* flex */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+    position: fixed;
+    bottom: 50px;
+    left: 60px;
+}
+
+.main .home .social i{
+    color: #A6A2A2;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.main .home .social i:hover{
+    color: white;
+   
+}
+
+.main .home .scrol-png {
+    height: 120px;
+    width: 40px;
+    position: fixed;
+    right: 60px;
+    bottom: 45px;
+}
+.main .home .scrol-png img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.main .home .container{
+    width: 1000px;
+    height: 500px;
+    padding-top: 50px;
+
+    /* flex */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Rectangle 1 */
+.container .form-container {
+align-self: flex-end;
+width: 470px;
+height: 480px;
+
+/* Rectangle 1 */
+background: rgba(229, 229, 229, 0.0);
+
+box-shadow: -7px 7px 30px #161616;
+position: relative;
+display: grid;
+align-items: center;
+justify-items: center;
+}
+.container .form-container h3{
+    color: white;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 37px;
+    letter-spacing: 3px;
+}
+
+.container .form-container h3::selection{
+    background: black;
+    color: white;
+}
+
+.container .form-container form{
+    height: 400px;
+    width: 100%;
+
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+::placeholder{
+    color: #A6A2A2;
+}
+
+.container .form-container form input{
+    width: 90%;
+    color: #A6A2A2;
+    height: 38px;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 2px solid #A6A2A2;
+    background: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+
+}
+.container .form-container form button {
+    height: 37px;
+    width: 144px;
+    background: #1A1C20;
+    border: none;
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.4);
+    color: #A6A2A2;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.container .form-container form button:hover {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+
+
+
+.container .contact-content{
+    height: 400px;
+    width: 450px;
+
+    /* grid */
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.container .contact-content h3{
+    font-size: 38px;
+    color: white;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.container .contact-content h3::selection{
+    background: black;
+    color: white;
+}
+
+.container .contact-content p{
+    text-align: center;
+    line-height: 30px;
+    color: #A6A2A2;
+    font-family: 'Poppins', sans-serif;
+
+}
+.container .contact-content p::selection{
+    background: black;
+    color:#A6A2A2;
+}
+.container .contact-content .address{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container .contact-content .address h4{
+    color: white;
+    font-family: 'Archivo Black', sans-serif;
+}
+.container .contact-content .address h4::selection{
+    background: black;
+    color: white;
+}
+
+.container .contact-content .address p{
+    color: #A6A2A2;
+}
+
+
+@media (max-width: 1052px) and (min-width: 743px) {
+    .main .home {
+        height: 170vh;
+        width: 100%;
+        /* grid */
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }      
+
+    .main .home .container{
+        width: 600px;
+        height: 90%;
+
+
+        /* flex */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+  
+    .container .form-container {
+        align-self: center;
+    }
+}
+
+@media (max-width: 742px) and (min-width: 500px) {
+    .main .home {
+        height: 170vh;
+        width: 100%;
+        /* grid */
+        display: grid;
+        align-items: center;
+        justify-items: center;
+      
+    }      
+
+    .main .home .container{
+        width: 330px;
+        height: 90%;
+ 
+        /* flex */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+  
+    .container .form-container {
+        align-self: center;
+        width: 100%;
+        height: 500px;
+    }
+
+    .container .form-container h3{
+        font-size: 25px;
+        align-self: end;
+    }
+
+    .container .contact-content{
+        height: 400px;
+        width: 330px;
+    }
+
+    .main .home .scrol-png {
+  
+        right: 18px;
+        bottom: 30px;
+    }
+
+    .main .home .social { 
+  
+        bottom: 50px;
+        left: 18px;
+    }
+    .logo{
+        position: absolute;
+        left: 20px;
+        top: 30px;
+        height: 60px;
+        width: 55px;
+    }
+    .list {
+        position: absolute;
+        right: 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 220px;
+    }
+}
+
+@media (max-width: 499px) {
+    .main .home {
+        height: 180vh;
+        width: 100%;
+        /* grid */
+        display: grid;
+        align-items: center;
+        justify-items: center;
+      
+    }      
+
+    .main .home .container{
+        width: 300px;
+        height: 90%;
+
+        /* flex */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+  
+    .container .form-container {
+        align-self: center;
+        width: 90%;
+        height: 500px;
+    }
+
+    .container .form-container h3{
+        font-size: 20px;
+        align-self: end;
+    }
+
+    .container .contact-content{
+        height: 400px;
+        width: 90%;
+    }
+
+    .main .home .scrol-png {
+        visibility: hidden;
+        right: 18px;
+        bottom: 30px;
+    }
+
+    .main .home .social { 
+        position: absolute;
+        bottom: -530px;
+        left: 126px;
+        width: 110px;
+
+            /* flex */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+        
+    }
+    .logo{
+        position: absolute;
+        left: 20px;
+        top: 30px;
+        height: 60px;
+        width: 55px;
+    }
+    .list {
+        position: absolute;
+        right: 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 220px;
+    }
+}
